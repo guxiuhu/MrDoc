@@ -993,28 +993,29 @@ def admin_center_menu(request):
             "type": 1,
             "icon": "layui-icon layui-icon-set",
             "href": reverse('sys_setting'),
-        },
-        {
-            "id": "common",
-            "title": _("使用帮助"),
-            "icon": "layui-icon layui-icon-template-1",
-            "type": 0,
-            "href": "",
-            "children": [{
-                "id": 701,
-                "title": _("安装说明"),
-                "icon": "layui-icon layui-icon-face-smile",
-                "type": 1,
-                "openType": "_blank",
-                "href": "http://mrdoc.zmister.com/project-7/"
-            }, {
-                "id": 702,
-                "title": _("使用说明"),
-                "icon": "layui-icon layui-icon-face-smile",
-                "type": 1,
-                "openType": "_blank",
-                "href": "http://mrdoc.zmister.com/project-54/"
-            }]
         }
+        # ,
+        # {
+        #     "id": "common",
+        #     "title": _("使用帮助"),
+        #     "icon": "layui-icon layui-icon-template-1",
+        #     "type": 0,
+        #     "href": "",
+        #     "children": [{
+        #         "id": 701,
+        #         "title": _("安装说明"),
+        #         "icon": "layui-icon layui-icon-face-smile",
+        #         "type": 1,
+        #         "openType": "_blank",
+        #         "href": "http://mrdoc.zmister.com/project-7/"
+        #     }, {
+        #         "id": 702,
+        #         "title": _("使用说明"),
+        #         "icon": "layui-icon layui-icon-face-smile",
+        #         "type": 1,
+        #         "openType": "_blank",
+        #         "href": "http://mrdoc.zmister.com/project-54/"
+        #     }]
+        # }
     ]
     return JsonResponse(menu_data,safe=False)
