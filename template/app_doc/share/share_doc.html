@@ -430,59 +430,7 @@
         }
     };
 
-    // 显示打赏图片
-    $("#dashang").click(function(r){
-        var layer = layui.layer;
-        layer.open({
-            type: 1,
-            title: false,
-            closeBtn: 0,
-            area: ['480px','400px'],
-            shadeClose: true,
-            content: $('#dashang_img')
-          });
-    });
 </script>
-
-<!-- 打赏选项卡模板 -->
-<div id="dashang_img" style="display: none;">
-    <div class="layui-tab layui-tab-brief">
-        <ul class="layui-tab-title">
-          <li class="layui-this">微信</li>
-          <li>支付宝</li>
-          <li>QQ支付</li>
-          <li>PayPal</li>
-          <li>项目源码</li>
-        </ul>
-        <div class="layui-tab-content" style="height: 100px;">
-          <div class="layui-tab-item layui-show" align='center'>
-            <img src="{% static 'dashang/dashang_wx.webp' %}" style="width: 300px;height: auto;" />
-          </div>
-
-          <div class="layui-tab-item" align='center'>
-            <img src="{% static 'dashang/dashang_alipay.webp' %}" style="width: 300px;height: auto;" />
-          </div>
-          
-          <div class="layui-tab-item" align='center'>
-            <img src="{% static 'dashang/dashang_qq.webp' %}" style="width: 300px;height: auto;" />
-          </div>
-          
-          <div class="layui-tab-item" align='center'>
-            <a href="https://paypal.me/zmister" target="_blank">
-                <img src="{% static 'dashang/dashang_paypal.png' %}" style="width: 280px;height: auto;" />
-            </a>
-          </div>
-          
-          <div class="layui-tab-item" align='center'>
-            <p><a href="https://github.com/zmister2016/MrDoc" target="_blank">GitHub：https://github.com/zmister2016/MrDoc</a></p>
-            <br>
-            <p><a href="https://gitee.com/zmister/MrDoc" target="_blank">码云：https://gitee.com/zmister/MrDoc</a> </p>
-            <br>
-            <p><a href="https://zmister.com" target="_blank">作者博客：https://zmister.com</a></p>
-          </div>
-        </div>
-      </div> 
-  </div>
 
 <!-- 统计代码开始 -->
     {% if debug %}

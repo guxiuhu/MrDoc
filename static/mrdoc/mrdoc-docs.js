@@ -221,21 +221,6 @@ function smallFont(){
 };
 
 /*
-    显示打赏图片
-*/
-$("#dashang").click(function(r){
-    var layer = layui.layer;
-    layer.open({
-        type: 1,
-        title: false,
-        closeBtn: 0,
-        area: ['480px','400px'],
-        shadeClose: true,
-        content: $('#dashang_img')
-      });
-});
-
-/*
     右侧文档目录
 */
 $(function(){
